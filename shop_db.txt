@@ -20,6 +20,6 @@ CREATE TABLE userdetail (
     username VARCHAR(20) NOT NULL UNIQUE,
     password VARCHAR(20) NOT NULL,
     name VARCHAR(30) NOT NULL,
-    email VARCHAR(30) NOT NULL UNIQUE,
+    email VARCHAR(30) NOT NULL,
     phone INT(12) NOT NULL
 );
