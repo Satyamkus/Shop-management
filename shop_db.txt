@@ -1,0 +1,25 @@
+
+CREATE DATABASE shop;
+
+
+USE shop;
+
+
+CREATE TABLE product (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(50) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    company_name VARCHAR(100) NOT NULL,
+    stock INT(11) NOT NULL,
+    date DATE NOT NULL
+);
+
+
+CREATE TABLE userdetail (
+    id INT (11) AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(20) NOT NULL UNIQUE,
+    password VARCHAR(20) NOT NULL,
+    name VARCHAR(30) NOT NULL,
+    email VARCHAR(30) NOT NULL UNIQUE,
+    phone INT(12) NOT NULL
+);
